@@ -1,2 +1,0 @@
-{"userName":"Paul","gender":"male","age":"20"}
-{"userName":"Pavlo","gender":"male","age":"20"}
