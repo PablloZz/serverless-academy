@@ -13,9 +13,9 @@ function getEnv() {
     }
   });
 
-  const { TELEGRAM_TOKEN } = process.env;
+  const { TELEGRAM_TOKEN, CHAT_ID } = process.env;
 
-  return TELEGRAM_TOKEN;
+  return { TELEGRAM_TOKEN, CHAT_ID };
 }
 
 export { getEnv };
