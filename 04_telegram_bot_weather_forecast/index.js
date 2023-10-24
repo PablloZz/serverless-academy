@@ -14,14 +14,14 @@ const { TELEGRAM_TOKEN, OPEN_WEATHER_API_KEY, CHAT_ID } = getEnv();
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 bot.sendMessage(CHAT_ID, "Welcome", {
   reply_markup: {
-    TelegramKeyboard: [[TelegramKeyboard.FORECAST_IN_TOKYO]],
+    keyboard: [[TelegramKeyboard.FORECAST_IN_TOKYO]],
   },
 });
 bot.on("message", async msg => {
   if (msg.text === TelegramKeyboard.FORECAST_IN_TOKYO) {
     bot.sendMessage(msg.chat.id, "Please Choose an Interval", {
       reply_markup: {
-        TelegramKeyboard: [
+        keyboard: [
           [TelegramKeyboard.THREE_HOURS_INTERVALS],
           [TelegramKeyboard.SIX_HOURS_INTERVALS],
         ],
