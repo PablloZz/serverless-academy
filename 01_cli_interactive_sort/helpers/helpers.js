@@ -1,7 +1,7 @@
 const {
-  alphabeticcalyWordsSorting,
+  alphabeticallyWordsSorting,
 } = require("./alphabetically-words-sorting");
-const { ascendingNumbersSorting } = require("./ascending-numbers-sorthing");
+const { ascendingNumbersSorting } = require("./ascending-numbers-sorting");
 const {
   ascendingWordsSortingByLettersAmount,
 } = require("./ascending-words-sorting-by-letters-amount");
@@ -10,7 +10,7 @@ const { getUniqueValues } = require("./get-unique-values");
 const { getUniqueWords } = require("./get-unique-words");
 
 module.exports = {
-  alphabeticcalyWordsSorting,
+  alphabeticallyWordsSorting,
   ascendingNumbersSorting,
   ascendingWordsSortingByLettersAmount,
   descendingNumbersSorting,

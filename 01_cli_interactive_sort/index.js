@@ -4,7 +4,7 @@ const { stdin: input, stdout: output } = require("node:process");
 
 const rl = readline.createInterface({ input, output });
 const {
-  alphabeticcalyWordsSorting,
+  alphabeticallyWordsSorting,
   ascendingNumbersSorting,
   ascendingWordsSortingByLettersAmount,
   descendingNumbersSorting,
@@ -15,7 +15,7 @@ const {
 function getSortedValues(sortingType, values) {
   switch (Number(sortingType)) {
     case 1: {
-      return alphabeticcalyWordsSorting(values);
+      return alphabeticallyWordsSorting(values);
     }
     case 2: {
       return ascendingNumbersSorting(values);

@@ -1,4 +1,4 @@
-function alphabeticcalyWordsSorting(words) {
+function alphabeticallyWordsSorting(words) {
   return words
     .split(" ")
     .filter((word) => isNaN(word))
@@ -6,4 +6,4 @@ function alphabeticcalyWordsSorting(words) {
     .join(" ");
 }
 
-module.exports = { alphabeticcalyWordsSorting };
+module.exports = { alphabeticallyWordsSorting };
