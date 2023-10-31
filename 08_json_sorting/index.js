@@ -39,7 +39,8 @@ async function getData(endpoints) {
       }
     }
   }
-  console.log(isDoneCount);
+  console.log(`Found True values: ${isDoneCount.doneTrue}`);
+  console.log(`Found False values: ${isDoneCount.doneFalse}`);
 }
 
 getData(endpoints);
