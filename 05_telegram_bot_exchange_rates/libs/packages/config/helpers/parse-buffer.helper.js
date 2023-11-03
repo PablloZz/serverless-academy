@@ -20,7 +20,7 @@ function parseBuffer(dataToParse) {
         value[0] === "'" && value[lastCharacterPosition] === "'";
 
       if (isSingleQuoted || isDoubleQuoted) {
-        value = value.substring;
+        value = value.substring(1, lastCharacterPosition);
 
         if (isDoubleQuoted) {
           value = value.replace(RE_NEWLINES, NEWLINE);
