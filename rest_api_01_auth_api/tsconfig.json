@@ -1,0 +1,19 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "files": ["src/index.d.ts"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["src/libs/*"],
+      "#/*": ["src/packages/*"]
+    }
+  }
+}
